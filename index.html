@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <div id="title">
-        Etch-A-Sketch Walmart Version!
+    <div id="title-container">
+        <div id="title">
+            Etch-A-Sketch Walmart Version!
+        </div>
     </div>
-    <div id="container">
+    <div class="dropdown-container">
+        <div class="color-dropdown">
+            Choose color:
+            <select name="Color" id="colord">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo</option>
+                <option value="Violet">Violet</option>
+            </select>
+        </div>
+        <div class="pixel-dropdown">
+            Choose the number of boxes per row:
+            <select name="Pixel-count" id="pixeld">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">50</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <div class="container-con">
+        <div id="container"> 
+        </div>
+    </div>
+    <div class="button-cont">
+        <button id="reset">Reset</button>
+    </div>
 </body>
 </html>
